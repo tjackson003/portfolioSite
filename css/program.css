@@ -2,28 +2,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mainNav {
-    display: flex;
-    list-style-type: none;
-}
-
-#linkNav {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0px;
-    padding-right: 40px;
-}
-
-#mainNav li a, #linkNav li a {
-    text-decoration: none;
-    margin: 10px;
-    color: black;
-}
