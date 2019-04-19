@@ -2,3 +2,65 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#heroBox {
+    background: rgb(219, 43, 57);
+    height: 600px;
+    /* width: auto; */
+    /* z-index: 198; */
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuItems {
+    display: flex;
+    padding: 0;
+    margin-left: 35px;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#iconItems {
+    display: flex;
+    padding: 0;
+    margin-right: 10px;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#heroMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+#heroText {
+    padding-top: 200px;
+}
+
+#welcomeTxt {
+    width: 600px;
+}
+
+#aboutBox {
+    background: #333;
+    height: 600px;
+}
+
+#workBox {
+    background: rgb(41, 51, 92);
+    height: 600px;
+}
+
+#contactBox {
+    background: #333;
+    height: 600px;
+}
+
+#footer {
+    background: rgb(243, 167, 18);
+    height: 65px;
+}
