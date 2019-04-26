@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* GENERAL */
@@ -89,7 +90,18 @@ nav {
     text-align: center;
 }
 
+#aboutText {
+    display: flex;
+    max-width: 100%;
+}
+
 #aboutText p {
+    color: #7a7d7d;
+    font-size: 23px;
+    line-height: 1.2;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 45px;
     text-align: center;
 }
@@ -252,6 +264,19 @@ nav {
         height: 509px;
     }
 
+    #workCaro {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #caroImg2 {
+        display: none;
+    }
+
+    #caroImg3 {
+        display: none;
+    }
+
     /* CONTACT */
 
     #contactBox {
@@ -266,5 +291,18 @@ nav {
         height: 31px;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 371px) {
+    #aboutText p {
+        color: #7a7d7d;
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 45px;
+        text-align: center;
     }
 }
