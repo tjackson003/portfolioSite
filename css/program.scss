@@ -1,0 +1,355 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* GENERAL */
+
+.sectionHeader {
+    padding-top: 35px;
+    max-width: 100%;
+}
+
+#menuItems li a img, #iconItems li a img, #iconItemsAlt li a img {
+    max-width: 100%;
+}
+
+// Carousel config parameters
+$n: 6; // Number of images
+$item-width: 300px; // Now we can use percentages!
+$item-separation: 80px; // This now is set with Js
+$viewer-distance: 500px;
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / $n;
+$apothem: 482.842712474619px; // == $item-width / (2 * tan(PI / $n))
+
+/* .secHeadImg {
+    width: 20%;
+} */
+
+/* HERO BOX CSS */
+
+#heroBox {
+    background: rgb(219, 43, 57);
+    height: 600px;
+    width: 100vw;
+    /* z-index: 198; */
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuItems {
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#iconItems {
+    display: flex;
+    padding: 0;
+    margin-right: 10px;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#iconItemsAlt {
+    display: none;
+}
+
+#heroMain {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#computerImg {
+    max-width: 100%;   
+}
+
+#heroText {
+    padding-top: 200px;
+}
+
+#welcomeTxt {
+    max-width: 100%;
+    /* width: 600px; */
+}
+
+#welcomeTxtAlt {
+    display: none;
+}
+
+/* ABOUT BOX CSS */
+
+#aboutBox {
+    background: #fff;
+    height: 600px;
+    /* height: 500px; */
+}
+
+#aboutTitleBox {
+    text-align: center;
+}
+
+#aboutText {
+    display: flex;
+    max-width: 100%;
+}
+
+#aboutText p {
+    color: #7a7d7d;
+    font-size: 23px;
+    line-height: 1.2;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+/* WORK BOX CSS */
+
+#workBox {
+    background: rgb(41, 51, 92);
+    height: 600px;
+}
+
+#workTitleBox {
+    text-align: center;
+}
+
+#workCaro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > * {
+        flex: 0 0 auto;
+    }
+    margin-top: 45px;
+    /* text-align: center; */
+
+    figure {
+        width: $item-width;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        transform-origin: 50% 50% (-$apothem);
+        transform: rotateY(/* some amount here */rad);
+    
+        a {
+            width: 100%;
+    
+            &:not(:first-of-type) {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+#workCaro img {
+    margin: 0 10px;
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* CONTACT BOX CSS */
+
+#contactBox {
+    background: #1D7874;
+    height: 600px;
+}
+
+#contactTitleBox {
+    text-align: center;
+}
+
+#contactItems {
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+}
+
+/* FOOTER BOX CSS */
+
+#footer {
+    background: rgb(243, 167, 18);
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright {
+    padding: 0;
+    margin-left: 35px;
+    display: flex;
+    align-items: baseline;
+}
+
+#copyright img {
+    margin-top: 25px;
+}
+
+#footerIcons {
+    display: flex;
+    padding: 0;
+    margin-right: 10px;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#footerIcons li {
+    margin: 0 8px;
+}
+
+/* TABLET */
+
+@media (max-width: 1075px) {
+
+}
+
+/* MOBILE */
+
+@media (max-width: 425px) {
+
+    /* HERO BOX */
+
+    #heroBox {
+        position: relative;
+        background: url(../images/mobileBackground425px.png);
+        height: 509px;
+        width: 100vw;
+        /* z-index: 198; */
+        top: 0px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    #menuItems {
+        display: none;
+    }
+
+    #iconItems {
+        display: none;
+    }
+
+    #iconItemsAlt {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        top: 60%;
+        padding: 0;
+        list-style-type: none;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+    #heroMain {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #isoComp {
+        display: none;
+    }
+    
+    #heroText {
+        /* display: flex; */
+        padding-top: 200px;
+        /* justify-content: flex-start; */
+    }
+    
+    #welcomeTxt {
+        display: none;
+        max-width: 100%;
+        /* width: 600px; */
+    }
+
+    #welcomeTxtAlt {
+        display: flex;
+        max-width: 100%;
+    }
+
+    /* ABOUT BOX */
+
+    #aboutBox {
+        background: #fff;
+        height: 509px;
+    }
+
+    /* WORK */
+
+    #workBox {
+        background: rgb(41, 51, 92);
+        height: 509px;
+    }
+
+    #workCaro {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #caroImg2 {
+        display: none;
+    }
+
+    #caroImg3 {
+        display: none;
+    }
+
+    #caroImg4 {
+        display: none;
+    }
+
+    #caroImg5 {
+        display: none;
+    }
+
+    #caroImg6 {
+        display: none;
+    }
+
+    /* CONTACT */
+
+    #contactBox {
+        background: #1D7874;
+        height: 509px;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        background: rgb(243, 167, 18);
+        height: 31px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 371px) {
+    #aboutText p {
+        color: #7a7d7d;
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 45px;
+        text-align: center;
+    }
+}
