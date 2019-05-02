@@ -219,6 +219,18 @@ nav {
           transform: rotateY(5.23599rad);
 }
 
+.leftArrow {
+  position: absolute;
+  left: 12%;
+  top: 45%;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 12%;
+  top: 45%;
+}
+
 /* CONTACT BOX CSS */
 #contactBox {
   background: #1D7874;
