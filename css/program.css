@@ -225,10 +225,18 @@ nav {
   top: 45%;
 }
 
+.leftArrow:hover {
+  cursor: pointer;
+}
+
 .rightArrow {
   position: absolute;
   right: 12%;
   top: 45%;
+}
+
+.rightArrow:hover {
+  cursor: pointer;
 }
 
 /* CONTACT BOX CSS */

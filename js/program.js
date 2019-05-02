@@ -1,3 +1,5 @@
+// CAROUSEL LOGIC
+
 var carousel = document.querySelector('#workCaro');
 var figure = carousel.querySelector('figure');
 var leftNav = carousel.querySelector('.leftArrow');
@@ -26,3 +28,5 @@ function onClick(e) {
 
     figure.style.transform = `rotateY(${currImage * -theta}rad)`;
 }
+
+// PROJECT MODAL LOGIC
