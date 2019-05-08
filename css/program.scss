@@ -218,6 +218,51 @@ nav {
     justify-content: center;
 }
 
+#contactForm {
+    width: 70%;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin: 10px 0;
+        }
+
+        li input {
+            width: 100%;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            border-bottom: 1px solid #fff;
+        }
+
+        li ::-webkit-input-placeholder {
+            color: #fff;
+            font-size: 12px;
+            font-family: 'PT Sans', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        li textarea {
+            box-sizing: border-box;
+            width: 100%;
+            background: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+        }
+
+        li #submitBtn {
+            border: 1px solid #fff;
+            background: none;
+            color: #fff;
+            padding: 15px;
+            border-radius: 15%;
+            font-family: 'PT Sans', sans-serif;
+        }
+    }
+}
+
 /* FOOTER BOX CSS */
 
 #footer {

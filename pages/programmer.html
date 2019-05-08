@@ -87,19 +87,19 @@
             <form action="" id="contactForm">
                 <ul>
                     <li>
-                        <label for="fullName">Name: </label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name" placeholder="FULL NAME">
                     </li>
                     <li>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="mail" placeholder="EMAIL">
                     </li>
                     <li>
-                        <label for="message">Message: </label>
-                        <textarea name="textbox" id="message" cols="30" rows="10"></textarea>
+                        <input type="subject" id="subject" name="subject" placeholder="SUBJECT">
                     </li>
                     <li>
-                        <input type="submit" id="submitBtn">
+                        <textarea name="textbox" id="message" name="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                    </li>
+                    <li>
+                        <button id="submitBtn" name="submit">Submit</button>
                     </li>
                 </ul>
             </form>
